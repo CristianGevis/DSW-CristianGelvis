@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Shippori+Antique+B1&display=swap');
+:root{
+    --primary-color:#00B95F;
+    --secundary-color:#00032E;
+    --principal-font:'Montserrat', sans-serif;
+    --color-font:#00032E;
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: var(--principal-font);
+}
+header{
+    position: sticky;
+    top:-40px;
+    width: 100%;
+    height: 115px;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-font);
+    padding-top: 15px;
+    z-index: 5;
+    
+}
+/*  sección de estilos para el menú*/
+.header__title{
+   
+    width: 60%;
+    height: 40px;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
+nav{
+    
+    width: 70%;
+    background-color: var(--primary-color);
+    height: 35px;
+}
+nav ul {
+    width: 100%;
+    list-style: none;
+    margin: 0 auto;
+}
+.menu li {
+    width: 80px;
+    text-align: center;
+    
+}
+
+.menu a {
+    width: 130px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    justify-content: space-around;
+    color:var(--color-font); 
+    background-color: var(--primary-color);
+    
+    font-family: var(--principal-font);
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+.dropdown{
+    width: 80px;
+}
+.dropdown li {
+    display: none;
+    width: 80px;
+    position: relative;
+    background-color: var(--primary-color);
+    
+}
+
+.menu li:hover .dropdown li {
+    display: block;
+    width: 70px;
+    
+    
+}
+.menu a:hover {
+    width: 130px;
+    border-radius: 5px;
+    height: auto;
+    background-color:var(--secundary-color);
+    color: #fff;
+    font-size: 1.6rem;
+
+}
+/*Estilos main container*/
+.main_container{
+    width: 100%;
+    min-height: calc(100vh - 115px - 80px);
+}
+
+.main_title{
+    width: 100%;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 50px 0 0 0;
+    font-weight: bold   ;
+}
+.main_introduction{
+    width: 70%;
+    height: auto;
+    font-size: 1.6rem;
+    text-align: justify;
+    margin: 20px auto 0 auto;
+    line-height: 1.8;
+}
+.main_flexbox{
+    width: 70%;
+    height: auto;
+    margin: 30px auto 20px auto;
+    font-size: 1.6rem;
+    line-height: 1.9;
+    font-weight: bold;
+    
+}
+
+.main_flexbox-text{
+    width: 70%;
+    height: auto;
+    margin: 0 auto 20px auto;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+img{
+    width: 60%;
+    margin-left: 15%;
+    
+}
+.main_list{
+    width: 70%;
+    height: auto;
+    margin: 30px auto 20px auto;
+    font-size: 1.6rem;
+    line-height: 1.9;
+    font-weight: bold;
+}
+.main_list-text{
+    width: 70%;
+    height: auto;
+    margin: 0  auto 15px auto;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    text-align: justify;
+    font-family: var(--principal-font);
+}
+
+ul li{
+    width: 65%;
+    height: auto;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+ol li{
+    width: 65%;
+    height: auto;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+.main_imglist{
+    width: 20%;
+    margin-left: 15%;
+}
+dl dt{
+    width: 65%;
+    height: auto;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+dl dd{
+    width: 65%;
+    height: auto;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    text-align: justify; 
+}
+.main_links{
+    width: 70%;
+    height: auto;
+    margin: 15px auto 20px auto;
+    font-size: 1.6rem;
+    line-height: 1.9;
+    font-weight: bold;
+}
+.main_links-text{
+    width: 70%;
+    height: auto;
+    margin: 0  auto 15px auto;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+.main_links-example{
+    width: 70%;
+    height: auto;
+    margin: 0  auto 15px auto;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    text-align: justify;  
+}
+h4{
+    width: 70%;
+    height: auto;
+    margin: 0  auto 15px auto;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+.main_bibliography{
+    width: 70%;
+    height: auto;
+    margin: 0  auto 15px auto;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+#mostrar{
+    display: none; 
+    width: 90%; 
+    margin: 50px auto;
+}
+
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: #1F201F;
+    text-align: center;
+    color: white;
+    padding-top:20px;
+    font-size: 1.4rem;
+}
+.main_videoflexbox{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+.main_card{ 
+    position: relative;
+    top: 5px;
+    margin: 10px auto;   
+    width: 390px;
+    height: 510px;    
+    border-radius: 15px;
+    padding: 14px;
+    background-color:rgba(255, 255, 255,0.9);
+    
+}
+.main_card2{
+    border-radius: 17px;
+    background-image: linear-gradient(140deg, #020024 0%, #0096b4 50%, #7c0000 75%);
+    width: 400px;
+    height: 520px;
+    margin: 30px auto;    
+    -webkit-box-shadow: 10px 10px 5px -6px rgba(179,179,179,1);
+-moz-box-shadow: 10px 10px 5px -6px rgba(179,179,179,1);
+box-shadow: 10px 10px 5px -6px rgba(179,179,179,1);
+}
+.main_photo{
+    width: 300px;
+    margin: 20px auto;
+}
+.main_photo img{
+    margin-left: 55px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 15px 10px white;
+}
+.main_information{
+    width: 95%;
+    height: auto;
+    margin: 50px auto;
+    display: flex;
+    text-align: center;
+}
+
+.main_information p{    
+    margin: 0 auto;
+    line-height: 4vh;
+    text-align: left;
+    font-size: 1.6rem;
+}
+@media (max-width: 600px) {
+    
+}
